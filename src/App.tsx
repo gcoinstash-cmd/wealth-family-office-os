@@ -197,7 +197,7 @@ export default function App() {
       </section>
 
       {/* Direct Syndicates Section */}
-      <section id="syndicates" className="py-20 px-6 max-w-7xl mx-auto">
+      <section id="syndicates" className="py-20 px-6 max-w-7xl mx-auto scroll-mt-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-amber-400">DIRECT CAPITAL ALLOCATION</span>
@@ -278,7 +278,7 @@ export default function App() {
       </section>
 
       {/* Generational Dynasty Trust Architecture */}
-      <section id="dynasty" className="py-20 px-6 bg-[#0E0E10] border-y border-zinc-800">
+      <section id="dynasty" className="py-20 px-6 bg-[#0E0E10] border-y border-zinc-800 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono uppercase tracking-widest text-amber-400">DYNASTY ARCHITECTURE</span>
@@ -322,8 +322,67 @@ export default function App() {
         </div>
       </section>
 
+      {/* Asset Allocation Matrix Section */}
+      <section id="allocation" className="py-20 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <span className="text-xs font-mono uppercase tracking-widest text-amber-400">MACRO ASSET STRATEGY</span>
+            <h3 className="text-3xl font-extrabold text-white mt-1">Multi-Generational Asset Matrix</h3>
+            <p className="text-sm text-zinc-400 mt-2 max-w-xl">
+              Conservative preservation paired with high-conviction direct co-investments to generate risk-adjusted inflation-beating yields.
+            </p>
+          </div>
+          <div className="mt-4 md:mt-0 flex gap-2">
+            <button
+              onClick={() => setIsAdminOpen(true)}
+              className="px-4 py-2 bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 text-amber-400 text-xs font-mono rounded-lg transition"
+            >
+              VIEW PORTFOLIO LEDGER [ familyoffice2026 ]
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-amber-500/40 transition">
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">TARGET: 42% ALLOCATION</span>
+            <h4 className="text-lg font-bold text-white mt-3">Direct Real Estate & Infrastructure</h4>
+            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Trophy multi-family, critical logistics, and AI compute facilities. Cash flow generation with accelerated depreciation tax benefits.
+            </p>
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+              <span>Historical Yield: 8.5% Cash-on-Cash</span>
+              <span className="text-amber-400">$1.436B Deployed</span>
+            </div>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-amber-500/40 transition">
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">TARGET: 31% ALLOCATION</span>
+            <h4 className="text-lg font-bold text-white mt-3">Private Equity Secondaries & Direct Club</h4>
+            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+              GP-led secondaries purchased at 15–25% discounts to NAV, alongside direct growth co-investments free from 2-and-20 fee hurdles.
+            </p>
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+              <span>Target Net IRR: 16.5%</span>
+              <span className="text-amber-400">$1.060B Deployed</span>
+            </div>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-amber-500/40 transition">
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 border border-orange-500/20">TARGET: 18% ALLOCATION</span>
+            <h4 className="text-lg font-bold text-white mt-3">Senior Secured First-Lien Debt</h4>
+            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Short-duration, asset-backed commercial credit with conservative loan-to-value covenants and monthly cash distributions.
+            </p>
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+              <span>Current Yield: 11.2% Net</span>
+              <span className="text-amber-400">$615.6M Deployed</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Family Intake Form */}
-      <section id="consultation" className="py-20 px-6 max-w-4xl mx-auto">
+      <section id="consultation" className="py-20 px-6 max-w-4xl mx-auto scroll-mt-20">
         <div className="bg-[#121214] border border-zinc-800 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
           <div className="max-w-2xl">
             <span className="text-xs font-mono uppercase tracking-widest text-amber-400">CONFIDENTIAL ONBOARDING</span>
