@@ -163,7 +163,7 @@ export default function App() {
                 <span>AGGREGATE AUM</span>
               </div>
               <p className="text-2xl font-bold text-white mt-1">$3.42 Billion</p>
-              <p className="text-[11px] text-zinc-500 mt-0.5">28 Member Families</p>
+              <p className="text-xs font-semibold text-zinc-300 mt-0.5">28 Member Families</p>
             </div>
 
             <div className="p-4 rounded-xl bg-[#121214] border border-zinc-800">
@@ -172,7 +172,7 @@ export default function App() {
                 <span>NET BLENDED IRR</span>
               </div>
               <p className="text-2xl font-bold text-white mt-1">11.8% Net</p>
-              <p className="text-[11px] text-amber-400 mt-0.5">15-Year Track Record</p>
+              <p className="text-xs font-semibold text-amber-400 mt-0.5">15-Year Track Record</p>
             </div>
 
             <div className="p-4 rounded-xl bg-[#121214] border border-zinc-800">
@@ -181,7 +181,7 @@ export default function App() {
                 <span>DYNASTY TRUSTS</span>
               </div>
               <p className="text-2xl font-bold text-white mt-1">100% Shielded</p>
-              <p className="text-[11px] text-zinc-500 mt-0.5">Zero State Tax Perpetual</p>
+              <p className="text-xs font-semibold text-zinc-300 mt-0.5">Zero State Tax Perpetual</p>
             </div>
 
             <div className="p-4 rounded-xl bg-[#121214] border border-zinc-800">
@@ -190,7 +190,7 @@ export default function App() {
                 <span>DIRECT DEALS</span>
               </div>
               <p className="text-2xl font-bold text-white mt-1">Zero GP Fees</p>
-              <p className="text-[11px] text-zinc-500 mt-0.5">Co-Investments & Secondaries</p>
+              <p className="text-xs font-semibold text-zinc-300 mt-0.5">Co-Investments & Secondaries</p>
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function App() {
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-amber-400">DIRECT CAPITAL ALLOCATION</span>
             <h3 className="text-3xl font-extrabold text-white mt-1">Active Direct Co-Investments</h3>
-            <p className="text-sm text-zinc-400 mt-2 max-w-xl">
+            <p className="text-base sm:text-lg text-zinc-200 leading-relaxed mt-2 max-w-xl">
               Institutional-grade co-investment opportunities exclusively reserved for accredited family office members. Zero intermediary fee markups.
             </p>
           </div>
@@ -227,27 +227,27 @@ export default function App() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#121214] via-[#121214]/50 to-transparent"></div>
-                <div className="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-black/80 border border-zinc-700 text-[10px] font-mono font-bold text-amber-400">
+                <div className="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-black/80 border border-zinc-700 text-xs font-semibold tracking-wider font-mono font-bold text-amber-400">
                   {deal.status}
                 </div>
               </div>
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-mono font-semibold tracking-wider text-zinc-400 uppercase">{deal.assetClass}</span>
+                  <span className="text-xs font-semibold tracking-wider font-mono font-semibold tracking-wider text-zinc-400 uppercase">{deal.assetClass}</span>
                   <h4 className="text-xl font-bold text-white mt-1 group-hover:text-amber-300 transition-colors">{deal.projectName}</h4>
 
                   <div className="mt-4 pt-4 border-t border-zinc-800/80 space-y-2 text-xs">
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Equity Tranche:</span>
+                      <span className="text-zinc-300">Equity Tranche:</span>
                       <span className="font-semibold text-white">{deal.equityTarget}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Target Return:</span>
+                      <span className="text-zinc-300">Target Return:</span>
                       <span className="font-semibold text-amber-400">{deal.targetIrr}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Preferred Cash Yield:</span>
+                      <span className="text-zinc-300">Preferred Cash Yield:</span>
                       <span className="font-semibold text-zinc-300">{deal.prefReturn}</span>
                     </div>
                   </div>
@@ -283,7 +283,7 @@ export default function App() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono uppercase tracking-widest text-amber-400">DYNASTY ARCHITECTURE</span>
             <h3 className="text-3xl font-extrabold text-white mt-1">Generational Wealth Sovereignty</h3>
-            <p className="text-sm text-zinc-400 mt-2">
+            <p className="text-base sm:text-lg text-zinc-200 leading-relaxed mt-2">
               Structuring legal frameworks that defend against estate taxation, divorce claims, frivolous litigation, and jurisdiction risk for generations.
             </p>
           </div>
@@ -294,7 +294,7 @@ export default function App() {
                 <Shield className="w-6 h-6" />
               </div>
               <h4 className="text-lg font-bold text-white">South Dakota Perpetual Trusts</h4>
-              <p className="text-xs text-zinc-400 mt-3 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed mt-3 leading-relaxed">
                 Perpetual dynasty trust charters with zero state income tax, zero capital gains tax at trust level, and unbreakable 1,000-year statutory creditor immunity.
               </p>
             </div>
@@ -304,7 +304,7 @@ export default function App() {
                 <Building2 className="w-6 h-6" />
               </div>
               <h4 className="text-lg font-bold text-white">Private Family Trust Company (PTC)</h4>
-              <p className="text-xs text-zinc-400 mt-3 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed mt-3 leading-relaxed">
                 Empowering the family board to retain complete investment and distribution autonomy without surrendering fiduciary discretion to commercial bank trust departments.
               </p>
             </div>
@@ -314,7 +314,7 @@ export default function App() {
                 <KeyRound className="w-6 h-6" />
               </div>
               <h4 className="text-lg font-bold text-white">Cross-Border Tax Arbitrage</h4>
-              <p className="text-xs text-zinc-400 mt-3 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed mt-3 leading-relaxed">
                 Bespoke holding company design spanning Switzerland, Singapore, Delaware, and Puerto Rico Act 60 structures for tax minimization and sovereign mobility.
               </p>
             </div>
@@ -328,7 +328,7 @@ export default function App() {
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-amber-400">MACRO ASSET STRATEGY</span>
             <h3 className="text-3xl font-extrabold text-white mt-1">Multi-Generational Asset Matrix</h3>
-            <p className="text-sm text-zinc-400 mt-2 max-w-xl">
+            <p className="text-base sm:text-lg text-zinc-200 leading-relaxed mt-2 max-w-xl">
               Conservative preservation paired with high-conviction direct co-investments to generate risk-adjusted inflation-beating yields.
             </p>
           </div>
@@ -344,36 +344,36 @@ export default function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-amber-500/40 transition">
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">TARGET: 42% ALLOCATION</span>
+            <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">TARGET: 42% ALLOCATION</span>
             <h4 className="text-lg font-bold text-white mt-3">Direct Real Estate & Infrastructure</h4>
-            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+            <p className="text-base text-zinc-200 leading-relaxed mt-2 leading-relaxed">
               Trophy multi-family, critical logistics, and AI compute facilities. Cash flow generation with accelerated depreciation tax benefits.
             </p>
-            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-xs font-semibold text-zinc-300 flex justify-between">
               <span>Historical Yield: 8.5% Cash-on-Cash</span>
               <span className="text-amber-400">$1.436B Deployed</span>
             </div>
           </div>
 
           <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-amber-500/40 transition">
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">TARGET: 31% ALLOCATION</span>
+            <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">TARGET: 31% ALLOCATION</span>
             <h4 className="text-lg font-bold text-white mt-3">Private Equity Secondaries & Direct Club</h4>
-            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+            <p className="text-base text-zinc-200 leading-relaxed mt-2 leading-relaxed">
               GP-led secondaries purchased at 15–25% discounts to NAV, alongside direct growth co-investments free from 2-and-20 fee hurdles.
             </p>
-            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-xs font-semibold text-zinc-300 flex justify-between">
               <span>Target Net IRR: 16.5%</span>
               <span className="text-amber-400">$1.060B Deployed</span>
             </div>
           </div>
 
           <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-amber-500/40 transition">
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 border border-orange-500/20">TARGET: 18% ALLOCATION</span>
+            <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 border border-orange-500/20">TARGET: 18% ALLOCATION</span>
             <h4 className="text-lg font-bold text-white mt-3">Senior Secured First-Lien Debt</h4>
-            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+            <p className="text-base text-zinc-200 leading-relaxed mt-2 leading-relaxed">
               Short-duration, asset-backed commercial credit with conservative loan-to-value covenants and monthly cash distributions.
             </p>
-            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-xs font-semibold text-zinc-300 flex justify-between">
               <span>Current Yield: 11.2% Net</span>
               <span className="text-amber-400">$615.6M Deployed</span>
             </div>
@@ -387,7 +387,7 @@ export default function App() {
           <div className="max-w-2xl">
             <span className="text-xs font-mono uppercase tracking-widest text-amber-400">CONFIDENTIAL ONBOARDING</span>
             <h3 className="text-3xl font-extrabold text-white mt-1">Schedule Family Office Consultation</h3>
-            <p className="text-sm text-zinc-400 mt-2">
+            <p className="text-base sm:text-lg text-zinc-200 leading-relaxed mt-2">
               Strictly confidential engagement with our senior managing directors. Accredited family offices and ultra-high-net-worth principals only.
             </p>
           </div>
@@ -395,7 +395,7 @@ export default function App() {
           <form onSubmit={handleSubmitFamilyInquiry} className="mt-8 space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-mono uppercase text-zinc-400 mb-2">Family Office / Entity Name</label>
+                <label className="block text-sm font-semibold font-mono uppercase text-zinc-400 mb-2">Family Office / Entity Name</label>
                 <input
                   type="text"
                   required
@@ -407,7 +407,7 @@ export default function App() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono uppercase text-zinc-400 mb-2">Principal / Family Representative</label>
+                <label className="block text-sm font-semibold font-mono uppercase text-zinc-400 mb-2">Principal / Family Representative</label>
                 <input
                   type="text"
                   required
@@ -421,7 +421,7 @@ export default function App() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-mono uppercase text-zinc-400 mb-2">Confidential Direct Email</label>
+                <label className="block text-sm font-semibold font-mono uppercase text-zinc-400 mb-2">Confidential Direct Email</label>
                 <input
                   type="email"
                   required
@@ -433,7 +433,7 @@ export default function App() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono uppercase text-zinc-400 mb-2">Family Net Worth Bracket</label>
+                <label className="block text-sm font-semibold font-mono uppercase text-zinc-400 mb-2">Family Net Worth Bracket</label>
                 <select
                   value={aumTier}
                   onChange={(e) => setAumTier(e.target.value)}
@@ -475,20 +475,20 @@ export default function App() {
 
             <div className="my-6 p-4 rounded-xl bg-zinc-900 border border-zinc-800 space-y-2 text-xs">
               <div className="flex justify-between">
-                <span className="text-zinc-500">Equity Target:</span>
+                <span className="text-zinc-300">Equity Target:</span>
                 <span className="text-white font-bold">{selectedSyndicate.equityTarget}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-zinc-500">Target Net IRR:</span>
+                <span className="text-zinc-300">Target Net IRR:</span>
                 <span className="text-amber-400 font-bold">{selectedSyndicate.targetIrr}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-zinc-500">Distribution:</span>
+                <span className="text-zinc-300">Distribution:</span>
                 <span className="text-zinc-300 font-semibold">{selectedSyndicate.prefReturn}</span>
               </div>
             </div>
 
-            <p className="text-xs text-zinc-500 mb-6">
+            <p className="text-xs text-zinc-300 mb-6">
               Full subscription documents, legal opinion letters, and financial projections require accredited family office verification.
             </p>
 
@@ -520,7 +520,7 @@ export default function App() {
       />
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-zinc-800/80 bg-[#0A0A0B] text-zinc-500 text-xs">
+      <footer className="py-12 px-6 border-t border-zinc-800/80 bg-[#0A0A0B] text-zinc-300 text-xs">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-black font-black">
@@ -528,7 +528,7 @@ export default function App() {
             </div>
             <div>
               <p className="font-bold text-white tracking-wide">WEALTH FAMILY OFFICE OS</p>
-              <p className="text-[11px] text-zinc-500">Sovereign Multi-Family Office & Direct LP Engine</p>
+              <p className="text-xs font-semibold text-zinc-300">Sovereign Multi-Family Office & Direct LP Engine</p>
             </div>
           </div>
 

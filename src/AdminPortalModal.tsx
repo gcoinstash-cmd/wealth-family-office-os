@@ -80,7 +80,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               </div>
             </form>
 
-            <div className="mt-6 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex items-center justify-center gap-2">
+            <div className="mt-6 pt-6 border-t border-zinc-800 text-xs text-zinc-300 flex items-center justify-center gap-2">
               <Shield className="w-3.5 h-3.5 text-amber-400" />
               <span>Multi-Jurisdictional Trust Governance • Zero Third-Party Custody Gate</span>
             </div>
@@ -125,19 +125,19 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <div className="py-6 space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                   <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                    <p className="text-xs text-zinc-400">Aggregated Family Portfolio AUM</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">Aggregated Family Portfolio AUM</p>
                     <p className="text-2xl font-bold text-amber-400 mt-1">$3,420,000,000</p>
-                    <p className="text-[11px] text-zinc-500 mt-1">Spread Across 28 Sovereign Families</p>
+                    <p className="text-xs font-semibold text-zinc-300 mt-1">Spread Across 28 Sovereign Families</p>
                   </div>
                   <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                    <p className="text-xs text-zinc-400">Net Annualized Cash-Flow Yield</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">Net Annualized Cash-Flow Yield</p>
                     <p className="text-2xl font-bold text-white mt-1">11.8% Net IRR</p>
-                    <p className="text-[11px] text-amber-400 mt-1">Real Assets & Senior Secured Debt</p>
+                    <p className="text-xs font-semibold text-amber-400 mt-1">Real Assets & Senior Secured Debt</p>
                   </div>
                   <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                    <p className="text-xs text-zinc-400">Direct Secondary Allocations</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">Direct Secondary Allocations</p>
                     <p className="text-2xl font-bold text-white mt-1">$485,000,000</p>
-                    <p className="text-[11px] text-zinc-500 mt-1">Zero Middleman GP Fee Load</p>
+                    <p className="text-xs font-semibold text-zinc-300 mt-1">Zero Middleman GP Fee Load</p>
                   </div>
                 </div>
 
@@ -185,20 +185,20 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 <div className="space-y-3">
                   <div className="p-4 rounded-xl bg-zinc-900/40 border border-zinc-800 flex justify-between items-center">
                     <div>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">PROJECT HIGHLAND TOWER</span>
+                      <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">PROJECT HIGHLAND TOWER</span>
                       <h5 className="font-semibold text-white mt-1">Class-A Trophy Multifamily (Austin CBD)</h5>
-                      <p className="text-xs text-zinc-400">$65M Equity Check • Target Net IRR: 15.2% • 8.0% Preferred Return</p>
+                      <p className="text-base text-zinc-200 leading-relaxed">$65M Equity Check • Target Net IRR: 15.2% • 8.0% Preferred Return</p>
                     </div>
-                    <button className="px-3 py-1.5 bg-amber-500 hover:bg-amber-400 text-black text-xs font-semibold rounded-lg">Access Data Room</button>
+                    <button className="px-3 py-1.5 bg-amber-500 hover:bg-amber-400 text-black text-base font-semibold min-h-[44px] font-semibold rounded-lg">Access Data Room</button>
                   </div>
 
                   <div className="p-4 rounded-xl bg-zinc-900/40 border border-zinc-800 flex justify-between items-center">
                     <div>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30">PROJECT CYBER-CORE</span>
+                      <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30">PROJECT CYBER-CORE</span>
                       <h5 className="font-semibold text-white mt-1">Tier-4 Sovereign AI Data Center Facility (Northern VA)</h5>
-                      <p className="text-xs text-zinc-400">$120M Direct Syndication • 15-Year Triple Net Lease to Hyperscaler</p>
+                      <p className="text-base text-zinc-200 leading-relaxed">$120M Direct Syndication • 15-Year Triple Net Lease to Hyperscaler</p>
                     </div>
-                    <button className="px-3 py-1.5 bg-amber-500 hover:bg-amber-400 text-black text-xs font-semibold rounded-lg">Access Data Room</button>
+                    <button className="px-3 py-1.5 bg-amber-500 hover:bg-amber-400 text-black text-base font-semibold min-h-[44px] font-semibold rounded-lg">Access Data Room</button>
                   </div>
                 </div>
               </div>
@@ -225,7 +225,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
             )}
 
             <div className="mt-6 pt-4 border-t border-zinc-800 flex justify-between items-center">
-              <span className="text-xs text-zinc-500">Autonomous Family Office Engine • Supabase RLS Protected</span>
+              <span className="text-xs text-zinc-300">Autonomous Family Office Engine • Supabase RLS Protected</span>
               <button
                 onClick={() => setIsAuthenticated(false)}
                 className="text-xs text-rose-400 hover:underline"
